@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_edit"
+    android:orientation="vertical"
+    android:background="@color/black_700">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:theme="@style/Theme.MaterialComponents"
+        app:title="Edit Notes"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back"
+        app:titleTextColor="@color/yellow_700"/>
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_layout"
+        android:padding="12dp"
+        android:textColorHint="@color/yellow_700"
+        android:layout_margin="7dp"
+        android:hint="note title"
+        />
+
+    <EditText
+        android:id="@+id/edt_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_layout"
+        android:padding="12dp"
+        android:gravity="top"
+        android:hint="Add notes here...."
+        android:layout_weight="1"
+        android:textColorHint="@color/yellow_700"
+        android:layout_margin="7dp"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit notes"
+        android:background="@drawable/edt_layout"
+        style="@style/btnStyle"
+        tools:ignore="SpeakableTextPresentCheck" />
+</LinearLayout>
+
+

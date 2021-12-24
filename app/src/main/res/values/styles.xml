@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="edtStyle">
+        <item name="android:textColor">@color/yellow_700</item>
+    </style>
+
+
+</resources>
